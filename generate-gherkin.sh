@@ -8,8 +8,6 @@ while getopts ":gp:" option; do
     esac
 done
 
-
-
 function generate_gherkin() {
     response=$(curl $BASE_URL/completions -H 'Content-Type: application/json' -H "Authorization: Bearer $API_KEY" \
     -d '{
